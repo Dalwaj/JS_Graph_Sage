@@ -1460,7 +1460,7 @@ function lightMode() {
     }
     var allButton = document.getElementsByTagName("button");
     for (var j = 0, jmax = allButton.length; j < jmax; j++) {
-        allButton[j].style.color = "white";
+        allButton[j].style.color = "black";
         allButton[j].style.backgroundColor = "lightblue";
     }
     window.localStorage.setItem('themeSelect', 'lightMode');
@@ -1476,7 +1476,7 @@ function darkMode() {
     }
     var allButton = document.getElementsByTagName("button");
     for (var j = 0, jmax = allButton.length; j < jmax; j++) {
-        allButton[j].style.color = "grey";
+        allButton[j].style.color = "white";
         allButton[j].style.backgroundColor = "black";
     }
     window.localStorage.setItem('themeSelect', 'darkMode');

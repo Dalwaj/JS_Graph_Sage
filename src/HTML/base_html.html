@@ -108,7 +108,7 @@
                         </tr>
                         <tr>
                             <td>
-                               edge connectivity
+                                edge connectivity
                             </td>
                             <td id="edgeConnectivity"></td>
                         </tr>
@@ -116,10 +116,10 @@
                             <input type="checkbox" id="span_tree"/>
                             <label for="span_tree">show spanning tree</label>
                         </tr>
-                            <div class="horizontal">
-                                <td>g6 representation</td>
-                                <td><textarea id="g6" rows="1" cols="7"></textarea></td>
-                            </div>
+                        <div class="horizontal">
+                            <td>g6 representation</td>
+                            <td><textarea id="g6" rows="1" cols="7"></textarea></td>
+                        </div>
                         <tr>
                             <div class="horizontal">
                                 <td>
@@ -155,9 +155,9 @@
                         </tr>
                     </table>
                 </div>
-                <div>
+                <div id="hardAlgo">
                     <button class="hidingButton" onclick="develop(this)">></button>
-                    <p class="PanelHeader">hard algorithms</p>
+                    <p class="PanelHeader" >hard algorithms</p>
                 </div>
                 <div>
                     <table>
@@ -192,7 +192,9 @@
                             <td id="chromaticIndex"></td>
                         </tr>
                         <tr>
-                            <td><button onclick="montrerHamiltonian()">is hamiltonian?</button></td>
+                            <td>
+                                <button onclick="montrerHamiltonian()">is hamiltonian?</button>
+                            </td>
                             <td id="isHamiltonian"></td>
                         </tr>
                     </table>

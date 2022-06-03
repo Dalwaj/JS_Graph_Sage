@@ -292,3 +292,11 @@ textarea {
 table{
     width: 100%;
 }
+#hardAlgo{
+    display: flex;
+    flex-direction: row;
+}
+.rectangle{
+
+    border: solid black;
+}
