@@ -31,6 +31,7 @@ const cursorPosition = {
 const LoopType = "Loop";
 const NodeType = "Node";
 const EdgeType = "Edge";
+const GraphType = "Graph";
 
 class Point {
     constructor(x, y) {
@@ -1510,6 +1511,18 @@ var isMouseOver =true;
     }
     return isMouseOver;
 
+}
+
+function RedrawGraph(graph) {
+    InitNewGraph(graph.newValue);
+    UpdateGraphProperties();
+    hasGraphChanged = false;
+}
+
+function ReturnToPreviousGraph(graph) {
+    InitNewGraph(graph.oldValue);
+    UpdateGraphProperties();
+    hasGraphChanged = false;
 }
 
 

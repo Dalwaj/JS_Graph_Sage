@@ -100,10 +100,8 @@ function TreatResponse(response) {
             webSocket.close();
             break;
         case renewGraphParameter :
-            MyManager.ClearMemory();
-            InitNewGraph(StringToObject(response.result));
-            UpdateGraphProperties();
-            hasGraphChanged = false;
+            var graph = new ValueRegisterer(graphJSON, StringToObject(response.result), new Element(graphJSON, GraphType));
+            MyManager.Execute(new RedrawGraphCommand(graph));
             break;
         case girthParameter :
             afficherResultGirth(response.result);

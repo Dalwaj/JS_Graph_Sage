@@ -45,6 +45,9 @@ var MoveNodeCommand = function (value, firstAction = true) {
 };
 var MoveSelectedNodesCommand = function (tabNodes, firstAction = true) {
     return new Command(SetNewSelectedNodesPosition, SetOldSelectedNodesPosition ,tabNodes, firstAction);
+};
+var RedrawGraphCommand = function (value, firstAction = true) {
+    return new Command(RedrawGraph, ReturnToPreviousGraph, value, firstAction);
 }
 
 class CommandManager {
