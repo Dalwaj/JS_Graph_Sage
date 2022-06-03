@@ -1404,6 +1404,12 @@ function DeleteAllEdgeGroups() {
     });
 }
 
+function DeleteAllVertexGroups() {
+    nodes.each(function (d) {
+        d.group = 0;
+    });
+}
+
 
 function checkIfExist() {
     window.open("https://hog.grinvin.org/DoSearchGraphFromGraph6String.action?graph6String=" + document.querySelector("#g6").textContent);

@@ -519,8 +519,21 @@ function DisplayColoringInText(idHtml, coloring) {
         coloringString += "</div>";
     }
     document.getElementById(idHtml).innerHTML = `
-          <button class="x" onclick="this.parentElement.innerHTML = '';"></button> 
+          <button class="x" onclick="DeleteColoration(this)"></button> 
           <span id="classes">Classes:</span>` + coloringString;
+}
+
+function DeleteColoration(button) {
+    var row = button.parentElement;
+    row.innerHTML = '';
+    if (row.id == "edgeColoring") {
+        DeleteAllEdgeGroups();
+        ManageEdges();
+    }
+    else if (row.id == "vertexColoring") {
+        DeleteAllVertexGroups();
+        ManageNodes();
+    }
 }
 
 function develop(button) {
