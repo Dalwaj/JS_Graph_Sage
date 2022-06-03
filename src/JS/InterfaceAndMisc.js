@@ -327,7 +327,7 @@ function TryAddNewGroup() {
 
 function KeyboardEventInit() {
 
-    document.onkeydown = function() {
+    document.onkeypress = function() {
         CheckIfGraphChanged();
     }
     //Keyboard Event
