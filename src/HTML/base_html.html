@@ -30,17 +30,17 @@
             <div class="Panel">
                 <div>
                     <button class="hidingButton" onclick="develop(this)">></button>
-                    <p class="PanelHeader">Tools</p>
+                    <p class="PanelHeader">tools</p>
                 </div>
                 <div id="ToolPanelContent" class="PanelContent">
                     <table>
                         <tr>
                             <td>
-                                <p style="padding-right: 10px;">Current Group</p>
+                                <p style="padding-right: 10px;">current group</p>
                             </td>
                             <td>
                                 <select id="groupList" onchange="ChangeSelectedGroup()">
-                                    <option value="Add New Group" style="background-color: white;">Add New Group
+                                    <option value="Add New Group" style="background-color: white;">add new group
                                     </option>
                                 </select>
                             </td>
@@ -50,86 +50,83 @@
             </div>
             <div class="Panel">
                 <div>
-                    <p class="PanelHeader">Properties</p>
+                    <p class="PanelHeader">properties</p>
                 </div>
                 <div id="PropertyPanelContent" class="PanelContent">
                     <table>
                         <tr>
-                            <td>Number of nodes</td>
+                            <td>number of nodes</td>
                             <td id="numberOfNode"></td>
                         </tr>
                         <tr>
                             <td>
-                                Girth
+                                girth
                             </td>
                             <td id="Girth"></td>
                         </tr>
                         <tr>
-                            <td>Number of edges</td>
+                            <td>number of edges</td>
                             <td id="numberOfEdges"></td>
                         </tr>
                         <tr>
-                            <td>Radius</td>
+                            <td>radius</td>
                             <td id="radiusLabel">0</td>
                         </tr>
                         <tr>
-                            <td>Diameter</td>
+                            <td>diameter</td>
                             <td id="diameterLabel">0</td>
                         </tr>
                         <tr>
-                            <td>Is regular</td>
+                            <td>is regular?</td>
                             <td id="regularLabel">False</td>
                         </tr>
                         <tr>
-                            <td>Is planar</td>
+                            <td>is planar?</td>
                             <td id="planarLabel">False</td>
                         </tr>
                         <tr>
-                            <td>Is bipartite</td>
+                            <td>is bipartite?</td>
                             <td id="bipartiteLabel">False</td>
                         </tr>
                         <tr>
-                            <td>Maximal degree</td>
+                            <td>maximal degree</td>
                             <td id="maximaldegre"></td>
                         </tr>
                         <tr>
-                            <td>Minimal degree</td>
+                            <td>minimal degree</td>
                             <td id="minimaldegre"></td>
                         </tr>
                         <tr>
-                            <td>Is eulerian</td>
+                            <td>is eulerian?</td>
                             <td id="isEulerian"></td>
                         </tr>
                         <tr>
                             <td>
-                                vertex Connectivity
+                                vertex connectivity
                             </td>
                             <td id="vertexConnectivity"></td>
                         </tr>
                         <tr>
                             <td>
-                               edge Connectivity
+                                edge connectivity
                             </td>
                             <td id="edgeConnectivity"></td>
                         </tr>
                         <tr>
                             <input type="checkbox" id="span_tree"/>
-                            <label for="span_tree">Show spanning tree</label>
+                            <label for="span_tree">show spanning tree</label>
                         </tr>
-                        <tr>
-                            <div class="horizontal">
-                                <td>G6</td>
-                                <td><textarea id="g6" rows="1" cols="7"></textarea></td>
-                            </div>
-
+                        <div class="horizontal">
+                            <td>g6 representation</td>
+                            <td><textarea id="g6" rows="1" cols="7"></textarea></td>
+                        </div>
                         <tr>
                             <div class="horizontal">
                                 <td>
-                                    <button id="HouseButton" onclick="checkIfExist();">Exists  on House of Graphs ?
+                                    <button id="HouseButton" onclick="checkIfExist();">exists on house of graphs?
                                     </button>
                                 </td>
                             </div>
-
                         </tr>
                     </table>
                 </div>
@@ -137,35 +134,37 @@
             <div class="Panel">
                 <div>
                     <button class="hidingButton" onclick="develop(this)">></button>
-                    <p class="PanelHeader">Orientations</p>
+                    <p class="PanelHeader">orientations</p>
                 </div>
                 <div id="AlgorithmPanelContent" class="PanelContent">
                     <table>
                         <tr>
                             <td>
-                                <button onclick="RequestStrongOrientation()">Strong orientation</button>
+                                <button onclick="RequestStrongOrientation()">strong orientation</button>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <button onclick="RequestRandomOrientation()">Random orientation</button>
+                                <button onclick="RequestRandomOrientation()">random orientation</button>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <button onclick="RequestConvertGraph()">Convert to Di/Graph</button>
+                                <button onclick="RequestConvertGraph()">convert to di/graph</button>
                             </td>
                         </tr>
-
-                        <tr>
-                            <td>
-                                <p class="PanelHeader">Hard Algorithms</p>
-                            </td>
-                        </tr>
+                    </table>
+                </div>
+                <div id="hardAlgo">
+                    <button class="hidingButton" onclick="develop(this)">></button>
+                    <p class="PanelHeader" >hard algorithms</p>
+                </div>
+                <div>
+                    <table>
                         <tr>
                             <td>
                                 <button onclick="RequestVertexColoring()">
-                                    Optimal proper vertex coloring
+                                    optimal proper vertex coloring
                                 </button>
                             </td>
                         </tr>
@@ -174,7 +173,7 @@
                         <tr>
                             <td>
                                 <button onclick="RequestEdgeColoring()">
-                                    Optimal proper edge coloring
+                                    optimal proper edge coloring
                                 </button>
                             </td>
                         </tr>
@@ -188,12 +187,14 @@
                         </tr>
                         <tr>
                             <td>
-                                <button onclick="montrerChromaticIndex()">chromatic Index</button>
+                                <button onclick="montrerChromaticIndex()">chromatic index</button>
                             </td>
                             <td id="chromaticIndex"></td>
                         </tr>
                         <tr>
-                            <td><button onclick="montrerHamiltonian()">Is Hamiltonian</button></td>
+                            <td>
+                                <button onclick="montrerHamiltonian()">is hamiltonian?</button>
+                            </td>
                             <td id="isHamiltonian"></td>
                         </tr>
                     </table>
@@ -202,83 +203,83 @@
             <div class="Panel">
                 <div>
                     <button class="hidingButton" onclick="develop(this)">></button>
-                    <p class="PanelHeader">Key Commands</p>
+                    <p class="PanelHeader">key commands</p>
                 </div>
                 <div id="KeyPanelContent" class="PanelContent">
                     <table>
                         <tr>
-                            <th>General:</th>
+                            <th>general:</th>
                         </tr>
                         <tr>
-                            <td>(Un)freeze nodes' positions</td>
+                            <td>(un)freeze nodes' positions</td>
                             <td>F</td>
                         </tr>
                         <tr>
-                            <td>Dis/Enable automatic save</td>
+                            <td>dis/enable automatic save</td>
                             <td>U</td>
                         </tr>
                         <tr>
-                            <td>Save graph</td>
+                            <td>save graph</td>
                             <td>S</td>
                         </tr>
                         <tr>
-                            <td>Undo</td>
+                            <td>undo</td>
                             <td>Z</td>
                         </tr>
                         <tr>
-                            <td>Redo</td>
+                            <td>redo</td>
                             <td>Y</td>
                         </tr>
 
                         <tr>
-                            <th>On Hover:</th>
+                            <th>on hover:</th>
                         </tr>
                         <tr>
-                            <td>Un/Select Element</td>
-                            <td>Double click</td>
+                            <td>un/select element</td>
+                            <td>double click</td>
                         </tr>
                         <tr>
-                            <td>Move Node</td>
-                            <td>Drag</td>
+                            <td>move node</td>
+                            <td>drag</td>
                         </tr>
                         <tr>
-                            <td>Add Node</td>
+                            <td>add node</td>
                             <td>A</td>
                         </tr>
                         <tr>
-                            <td>Set Label</td>
+                            <td>set label</td>
                             <td>N</td>
                         </tr>
 
                         <tr>
-                            <th>On Selection:</th>
+                            <th>on selection:</th>
                         </tr>
                         <tr>
-                            <td>Reset Selection</td>
+                            <td>reset selection</td>
                             <td>R</td>
                         </tr>
                         <tr>
-                            <td>Add to Group</td>
+                            <td>add to group</td>
                             <td>C</td>
                         </tr>
                         <tr>
-                            <td>Delete</td>
+                            <td>delete</td>
                             <td>Del</td>
                         </tr>
                         <tr>
-                            <td>Add Edges</td>
+                            <td>add edges</td>
                             <td>E</td>
                         </tr>
                         <tr>
-                            <td>Add Loop</td>
+                            <td>add loop</td>
                             <td>L</td>
                         </tr>
                         <tr>
-                            <td>Subdivide Edge</td>
+                            <td>subdivide edge</td>
                             <td>D</td>
                         </tr>
                         <tr class="DirectedRelated">
-                            <td>Invert Edge</td>
+                            <td>invert edge</td>
                             <td>I</td>
                         </tr>
                     </table>
@@ -291,7 +292,7 @@
                 <div class="scroll"></div>
             </div>
             <div class="Panel" id="UserInterface">
-                <p class="PanelHeader">User Interface</p>
+                <p class="PanelHeader">user interface</p>
                 <tr>
                     <!--                    <td><button  onclick="nightMode()">night mode</button></td>-->
 

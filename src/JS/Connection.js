@@ -151,6 +151,8 @@ function CheckIfGraphChanged() {
 
 function UpdateGraphProperties(message = ""){
     SubmitMessage(propertiesRequestParameter,message = message);
+    eraseHardAlgorithmData();
+
 }
 
 function montrerGirth(){
@@ -229,6 +231,13 @@ function onCloseClick() {
 
 function mergeVertices(verticesToMerge){
   SubmitMessage(mergeVerticesParameter, verticesToMerge);
+}
+
+function eraseHardAlgorithmData(){
+document.querySelector('#chromaticIndex').innerHTML='';
+document.querySelector('#chromaticNumber').innerHTML='';
+document.querySelector('#isHamiltonian').innerHTML='';
+
 }
 
 

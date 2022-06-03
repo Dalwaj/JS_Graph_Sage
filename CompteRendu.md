@@ -203,3 +203,28 @@ Faire un bouton("save") qui permet de fixer l'embedding (la possibilité de free
 - On est en train de rediger notre rapport.
 
 THE END
+    
+### P.S.
+#### 03/06/2022 - rdv sur la présentation pour les Sage Days
+*Choses à faire avant la présentation :*
+- Supprimer les couleurs en cliquant sur X des classes de coloration affichées sur le menu.
+- Points d'interrogation sur tous les "is" (is Hamiltonian, is planar, etc).
+- Les boutons des algorithmes ne doivent pas bouger quand la réponse est affichée (il faut laisser assez d'espace pour la réponse).
+- Pas de texte gris sur le noir et texte blanc sur le bleu (pas très visible).
+- Ctrl+Z après Redraw.
+- Mettre les propriétés en minuscule (y compris g6).
+- Renommer 'G6' en 'g6 representation'.
+- Les messages des hard algorithmes - supprimer dès que l'utilisateur ajoute des changements.
+- Bouton 'Exists on House...' doit prendre toute la ligne.
+- Key Commands: tout en minuscule sauf les titres.
+- Changer les styles de Key Commands (User experience).
+- Télécharger d3.js pour ne plus avoir besoin de la connexion Internet.
+- Effacer les branches inutiles.
+- Readme : JS_Graph is bidirectional (importing changes)
+- Mettre l'historique des versions dans Readme :
+```
+V1 - date - noms
+V2 - date - noms
+```
+
+*Répétition : vendredi à 19h par visio*
