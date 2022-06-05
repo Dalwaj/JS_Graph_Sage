@@ -50,6 +50,10 @@ var RedrawGraphCommand = function (value, firstAction = true) {
     return new Command(RedrawGraph, ReturnToPreviousGraph, value, firstAction);
 }
 
+var MergeVerticiesCommand = function (value, firstAction = true){
+    return new Command(MergeVerticies, unMergeVerticies, value, firstAction);
+}
+
 class CommandManager {
     constructor() {
         this.commandStack = [];

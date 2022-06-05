@@ -376,8 +376,10 @@ function KeyboardEventInit() {
                     break;
                 case 77 :
                     ///M for Merge Vertices
+                    result = [MergeVerticies(), "Merge Verticies"]
                     let selectedVertices = [];
 
+                    /*
 
                     for (let vertex of GetCurrentSelection()['nodes']) {
                         let vertexname = vertex['data']['name'];
@@ -390,8 +392,8 @@ function KeyboardEventInit() {
 
 
                     CustomWarn('Vertices merged');
-
-
+                    */
+                
                     break;
                 case 78 :
                     //N for Rename
