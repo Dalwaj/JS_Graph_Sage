@@ -1522,6 +1522,8 @@ var isMouseOver =true;
 function RedrawGraph(graph) {
     InitNewGraph(graph.newValue);
     UpdateGraphProperties();
+    document.getElementById("vertexColoring").innerHTML = '';
+    document.getElementById("edgeColoring").innerHTML = '';
     hasGraphChanged = false;
 }
 
