@@ -72,6 +72,8 @@ class CommandManager {
             //Redo the first action of the user
             var command = this.commandStack.pop();
             command.undo(command.value);
+            if (this.revertedCommandStack.length > 29)
+                this.revertedCommandStack.shift()
             this.revertedCommandStack.push(command);
             return true;
 
@@ -83,6 +85,8 @@ class CommandManager {
 
     Do(command) {
         command.execute(command.value);
+        if (this.commandStack.length > 29)
+            this.commandStack.shift()
         this.commandStack.push(command);
     }
 

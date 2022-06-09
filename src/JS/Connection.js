@@ -130,9 +130,8 @@ function TreatResponse(response) {
             afficherIsHamiltonian(response.result);
             break;
         case mergeVerticesParameter:
-            MyManager.ClearMemory();
-            InitNewGraph(StringToObject(response.result));
-            UpdateGraphProperties();
+            var graph = new ValueRegisterer(graphJSON, StringToObject(response.result), new Element(graphJSON, GraphType));
+            MyManager.Execute(new RedrawGraphCommand(graph));
             CustomWarn("Nodes merged");
             break;
         case graphChangeParameter:
