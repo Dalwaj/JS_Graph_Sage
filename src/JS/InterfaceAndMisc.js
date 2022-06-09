@@ -397,10 +397,6 @@ function KeyboardEventInit() {
                     //N for Rename
                     result = [TryRenameElement(), "Relabel hovered element"];
                     break;
-                case 82:
-                    //R to reset selection
-                    ResetSelection();
-                    break;
                 case 83:
                     //S for Save
                     SaveGraph();
@@ -436,6 +432,7 @@ function KeyboardEventInit() {
 function CheckUserAction(result) {
     if (result[0] == true) {
         UpdateGraphProperties(result[1]);
+        ResetSelection();
     }
 }
 
