@@ -35,14 +35,12 @@ def _get_graph_properties(graph):
     else:
         diameter = convert_sage_types(graph.diameter())
 
-    isTree = _the_graph_is_a_tree(graph)
-    empty = _the_graph_is_a_forest(graph)
+    test_girth = graph.girth()
 
-    if isTree or empty:
-        result = "+Infinite"
+    if type(test_girth)==int:
+        result = test_girth
     else:
-        result = graph.girth()
-
+        result = "+Infinite"
 
     response[1].append(radius)
     response[1].append(diameter)
