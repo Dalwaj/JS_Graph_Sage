@@ -84,6 +84,8 @@ window.onload = function () {
 
     document.addEventListener('mousemove', onMouseUpdate, false);
     document.addEventListener('mouseenter', onMouseUpdate, false);
+   var button_HardAlgo= document.getElementById('b_HardAlgo');
+    develop(button_HardAlgo);
 
 }
 function onMouseUpdate(e) {
