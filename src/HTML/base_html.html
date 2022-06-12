@@ -29,27 +29,6 @@
             </div>
             <div class="Panel">
                 <div>
-                    <button class="hidingButton" onclick="develop(this)">></button>
-                    <p class="PanelHeader">Colors</p>
-                </div>
-                <div id="ToolPanelContent" class="PanelContent">
-                    <table>
-                        <tr>
-                            <td>
-                                <p style="padding-right: 10px;">current group</p>
-                            </td>
-                            <td>
-                                <select id="groupList" onchange="ChangeSelectedGroup()">
-                                    <option value="Add New Group" style="background-color: white;">add new group
-                                    </option>
-                                </select>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="Panel">
-                <div>
                     <p class="PanelHeader">Properties</p>
                 </div>
                 <div id="PropertyPanelContent" class="PanelContent">
@@ -205,7 +184,7 @@
             <div class="Panel">
                 <div>
                     <button class="hidingButton" onclick="develop(this)">></button>
-                    <p class="PanelHeader">key commands</p>
+                    <p class="PanelHeader">Key Commands</p>
                 </div>
                 <div id="KeyPanelContent" class="PanelContent">
                     <table>
@@ -257,10 +236,6 @@
                             <th>On selection:</th>
                         </tr>
                         <tr>
-                            <td>add to group</td>
-                            <td>C</td>
-                        </tr>
-                        <tr>
                             <td>delete</td>
                             <td>Del</td>
                         </tr>
@@ -280,6 +255,31 @@
                             <td>invert edge</td>
                             <td>I</td>
                         </tr>
+                        <tr>
+                            <td>mark vertex with color selected below</td>
+                            <td>C</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="Panel">
+                <div>
+                    <button class="hidingButton" onclick="develop(this)">></button>
+                    <p class="PanelHeader">Colors</p>
+                </div>
+                <div id="ToolPanelContent" class="PanelContent">
+                    <table>
+                        <tr>
+                            <td>
+                                <p style="padding-right: 10px;">current color</p>
+                            </td>
+                            <td>
+                                <select id="groupList" onchange="ChangeSelectedGroup()">
+                                    <option id="addGroup" value="Add New Group">add new group
+                                    </option>
+                                </select>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>
@@ -290,7 +290,7 @@
                 <div class="scroll"></div>
             </div>
             <div class="Panel" id="UserInterface">
-                <p class="PanelHeader">user interface</p>
+                <p class="PanelHeader">User Interface</p>
                 <tr>
                     <!--                    <td><button  onclick="nightMode()">night mode</button></td>-->
 

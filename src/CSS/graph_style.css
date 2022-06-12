@@ -267,6 +267,14 @@ button:hover {
     background-color: black;
 }
 
+.darkMode #addGroup {
+    background-color: black;
+}
+
+.lightMode #addGroup {
+    background-color: white;
+}
+
 #isHamiltonian {
 }
 
