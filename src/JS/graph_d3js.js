@@ -1410,6 +1410,8 @@ function DeleteAllVertexGroups() {
     nodes.each(function (d) {
         d.group = 0;
     });
+    groupList = [0,];
+    PopulateGroupList();
 }
 
 

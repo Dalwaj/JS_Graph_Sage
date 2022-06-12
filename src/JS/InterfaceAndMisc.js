@@ -274,11 +274,11 @@ function EmptyGroupList() {
 
 function PopulateGroupList() {
     EmptyGroupList();
-    for (var i = 0; i < groupList.length; i++) {
+    for (var i = groupList.length-1; i >= 0; i--) {
         CreateGroupElement(groupList[i]);
     }
 
-    overlayElements.groupList.selectedIndex = 0;
+    overlayElements.groupList.selectedIndex = groupList.length-1;
 }
 
 function ChangeSelectedGroup() {
