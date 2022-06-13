@@ -274,7 +274,7 @@ function EmptyGroupList() {
 
 function PopulateGroupList() {
     EmptyGroupList();
-    for (var i = groupList.length-1; i >= 0; i--) {
+    for (var i = 0; i < groupList.length; i++) {
         CreateGroupElement(groupList[i]);
     }
 
@@ -431,6 +431,8 @@ function KeyboardEventInit() {
 
 function CheckUserAction(result) {
     if (result[0] == true) {
+        DeleteAllVertexGroups();
+        DeleteAllEdgeGroups();
         UpdateGraphProperties(result[1]);
         ResetSelection();
     }

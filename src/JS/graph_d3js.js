@@ -972,7 +972,7 @@ function CreateNode(pos = null) {
     }
 
     var newNode = {
-        group: "0",
+        group: 0,
         name: FindLowestIDAvailable(),
         fx: newX,
         fy: newY,
