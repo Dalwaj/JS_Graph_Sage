@@ -111,6 +111,9 @@ function PageOpenOrReload() {
         InitNewGraph();
         UpdateGraphProperties();
     }
+    if (graphJSON.directed) {
+        document.getElementById("g6-d6").innerHTML = "d6 representation";
+    }
 }
 
 
